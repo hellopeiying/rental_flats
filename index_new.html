@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isochronic Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #map {
+            height: calc(100% - 40px); /* Adjusted to account for the options-container height */
+            width: 100%;
+        }
+        .options-container {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 1;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .options-container h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
+        .options-container.transportation {
+            top: 20px;
+            left: 20px;
+        }
+        .options-container.time {
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="options-container transportation">
+        <h2>Transportation Option</h2>
+        <div class="option">
+            <label>
+                <input type="radio" name="transport" value="WALKING" checked> Walking
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="radio" name="transport" value="TRANSIT"> Public Transport
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="radio" name="transport" value="DRIVING"> Driving
+            </label>
+        </div>
+    </div>
+    <div class="options-container time">
+        <h2>Time</h2>
+        <div class="option">
+            <label>
+                <input type="radio" name="time" value="5"> 5 Minutes
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="radio" name="time" value="15" checked> 15 Minutes
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="radio" name="time" value="30"> 30 Minutes
+            </label>
+        </div>
+    </div>
+    <script>
+        let map;
+        let isochroneOptions = {
+            map: null,
+            location: { lat: 1.2951, lng: 103.8383 }, // Coordinates for 284 River Valley Road, Singapore 238325
+            travelMode: 'WALKING',
+            range: 15,
+            interval: 1,
+            fillColor: '#0088FF',
+            strokeColor: '#0044FF',
+            strokeWidth: 1,
+        };
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: isochroneOptions.location,
+            });
+
+            // Add marker for 284 River Valley Road
+            new google.maps.Marker({
+                position: isochroneOptions.location,
+                map: map,
+                title: '284 River Valley Road, Singapore 238325'
+            });
+
+            // Listen for changes to transportation options
+            document.querySelectorAll('input[name="transport"]').forEach((radio) => {
+                radio.addEventListener('change', () => {
+                    isochroneOptions.travelMode = radio.value;
+                    drawIsochrones();
+                });
+            });
+
+            // Listen for changes to time options
+            document.querySelectorAll('input[name="time"]').forEach((radio) => {
+                radio.addEventListener('change', () => {
+                    isochroneOptions.range = parseInt(radio.value);
+                    drawIsochrones();
+                });
+            });
+
+            // Draw initial isochrones
+            drawIsochrones();
+        }
+
+        function drawIsochrones() {
+            // Clear existing isochrones
+            if (isochroneOptions.isochrones) {
+                isochroneOptions.isochrones.forEach((polygon) => {
+                    polygon.setMap(null);
+                });
+            }
+
+            // Create a service for Distance Matrix API
+            const service = new google.maps.DistanceMatrixService();
+
+            // Define the request parameters
+            const request = {
+                origins: [new google.maps.LatLng(isochroneOptions.location)],
+                travelMode: isochroneOptions.travelMode,
+                unitSystem: google.maps.UnitSystem.METRIC,
+                durationInTraffic: true,
+                destinations: [],
+                travelDistance: isochroneOptions.range * 1000, // Convert range from kilometers to meters
+            };
+
+            // Calculate travel times for each angle from 0 to 360 degrees
+            for (let angle = 0; angle < 360; angle += isochroneOptions.interval) {
+                const destination = google.maps.geometry.spherical.computeOffset(request.origins[0], request.travelDistance, angle);
+                request.destinations.push(destination);
+            }
+
+            // Execute the Distance Matrix request
+            service.getDistanceMatrix(request, (response, status) => {
+                if (status === 'OK') {
+                    const origins = response.originAddresses;
+                    const results = response.rows[0].elements;
+
+                    // Draw isochrones based on travel times
+                    const isochrones = [];
+                    for (let i = 0; i < results.length; i++) {
+                        if (results[i].status === 'OK') {
+                            const duration = results[i].duration.value; // in seconds
+                            const durationInMinutes = duration / 60; // convert to minutes
+                            const fillColor = getColor(durationInMinutes);
+
+                            const circle = new google.maps.Circle({
+                                center: request.origins[0],
+                                radius: isochroneOptions.range * 1000, // Convert range from kilometers to meters
+                                strokeColor: isochroneOptions.strokeColor,
+                                strokeOpacity: 0.8,
+                                strokeWeight: isochroneOptions.strokeWidth,
+                                fillColor: fillColor,
+                                fillOpacity: 0.5,
+                                map: map,
+                            });
+                            isochrones.push(circle);
+                        }
+                    }
+                    isochroneOptions.isochrones = isochrones;
+                } else {
+                    console.error('Error calculating isochrones:', status);
+                }
+            });
+        }
+
+        // Helper function to get color based on travel time
+        function getColor(duration) {
+            if (duration <= 5) {
+                return '#00FF00'; // green
+            } else if (duration <= 15) {
+                return '#FFFF00'; // yellow
+            } else {
+                return '#FF0000'; // red
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA88hjs974huI09CkBTVH4Ax7hRvmvw33c&callback=initMap" async defer></script>
+</body>
+</html>
