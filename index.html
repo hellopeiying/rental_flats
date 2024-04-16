@@ -12,56 +12,107 @@
   <script src="https://api.mapbox.com/mapbox-assembly/v1.3.0/assembly.js"></script>
   <style>
     body {
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        padding: 0;
     }
     #map {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
     }
+    .body-text {
+        font-family: 'Open Sans', sans-serif; /* Open Sans font */
+        font-size: 12px; /* Font size 12px */
+        font-weight: 400; /* Font weight 400 */
+        color: #757d82; /* Adjust text color as needed */
+        /* Add any additional styling properties here */
+    }
+    h1 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    a {
+        text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
   <div id="map"></div>
-  <div class="absolute fl my24 mx24 py24 px24 bg-gray-faint round">
-    <form id="params">
-      <h4 class="txt-m txt-bold mb6">Choose a travel mode:</h4>
+  <div class="absolute fl my24 mx24 py24 px24 bg-gray-faint round" style="max-width: 300px;">
+    <h1 class="txt-bold mb6">Mapping time-distance poverty</h1>
+    <div class="instructions" style="margin-top: 20px;">
+        <h4 class="txt-bold mb6">Instructions on how to use this map</h4>
+        <p>Each red dot represents a block of rental flats. Choose your time and travel parameters, and click on a rental flat to view what is within its time distance.</p>
+      </div>      
+    <form id="params" style="margin-top: 20px;">
+      <h4 class="txt-bold mb6">Choose a travel mode:</h4>
       <div class="mb12 mr12 toggle-group align-center">
         <label class="toggle-container">
-          <input name="profile" type="radio" value="walking" />
+          <input name="mode" type="radio" value="walk" />
           <div class="toggle toggle--active-null toggle--null">Walking</div>
         </label>
         <label class="toggle-container">
-          <input name="profile" type="radio" value="cycling" checked />
-          <div class="toggle toggle--active-null toggle--null">Cycling</div>
+          <input name="mode" type="radio" value="approximated_transit" checked />
+          <div class="toggle toggle--active-null toggle--null">Transit</div>
         </label>
         <label class="toggle-container">
-          <input name="profile" type="radio" value="driving" />
+          <input name="mode" type="radio" value="drive" />
           <div class="toggle toggle--active-null toggle--null">Driving</div>
         </label>
       </div>
-      <h4 class="txt-m txt-bold mb6">Choose a maximum duration:</h4>
+      <h4 class="txt-bold mb6">Choose a maximum duration:</h4>
       <div class="mb12 mr12 toggle-group align-center">
         <label class="toggle-container">
-          <input name="duration" type="radio" value="10" checked />
+          <input name="time" type="radio" value="10" checked />
           <div class="toggle toggle--active-null toggle--null">10 min</div>
         </label>
         <label class="toggle-container">
-          <input name="duration" type="radio" value="20" />
+          <input name="time" type="radio" value="20" />
           <div class="toggle toggle--active-null toggle--null">20 min</div>
         </label>
         <label class="toggle-container">
-          <input name="duration" type="radio" value="30" />
+          <input name="time" type="radio" value="30" />
           <div class="toggle toggle--active-null toggle--null">30 min</div>
         </label>
       </div>
     </form>
+
+    <!-- 1. Add toggle switch for layers here -->
+    <div id="toggleLayer" style="margin-top: 20px;">
+    <h4 class="txt-bold mb6">Select essential amenities & services</h4>
+      <input type="checkbox" id="postoffices" name="postoffices" value="postoffices" unchecked>
+      <label for="postoffices" class="body-text">Post Offices</label><br>
+      <input type="checkbox" id="banks" name="banks" value="banks" unchecked>
+      <label for="banks" class="body-text">Bank Offices (DBS/POSB)</label><br>
+      <input type="checkbox" id="foodcentre" name="foodcentre" value="foodcentre" unchecked>
+      <label for="foodcentre" class="body-text">Food Centres & Markets</label><br>
+      <input type="checkbox" id="supermarkets" name="supermarkets" value="supermarkets" unchecked>
+      <label for="supermarkets" class="body-text">Supermarkets</label><br>
+      <input type="checkbox" id="healthcare" name="healthcare" value="healthcare" unchecked>
+      <label for="healthcare" class="body-text">Health Facilities</label><br>
+      <input type="checkbox" id="schools" name="schools" value="schools" unchecked>
+      <label for="schools" class="body-text">Primary & Secondary Schools</label><br>
+      <input type="checkbox" id="parks" name="parks" value="parks" unchecked>
+      <label for="parks" class="body-text">Parks & Nature Reserves</label><br>
+    </div>
+    <div class="source" style="margin-top: 20px;">
+        <p>Details on this project's methodology and datasets are available on <a href="https://github.com/hellopeiying/rental_flats">Github</a>.</p>
+    </div>
   </div>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoicGVpeWluZ3VvZSIsImEiOiJjbHQzNTdydm8wdWFxMmpyejFkOTBqcHp0In0.ccp_lnjUYUuZ21yP8auFPg';
 
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoicGVpeWluZ3VvZSIsImEiOiJjbHQzNTdydm8wdWFxMmpyejFkOTBqcHp0In0.ccp_lnjUYUuZ21yP8auFPg';
     const map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/peiyinguoe/clucsbsg800pp01pic4vfb1jj', // custom style
@@ -70,21 +121,60 @@
     });
 
     // Create variables to use in getIso()
-    const urlBase = 'https://api.mapbox.com/isochrone/v1/mapbox/';
-    let profile = 'cycling';
-    let minutes = 10;
+    let mode = 'approximated_transit';
+    let time = 10;
     let selectedPoint = null;
 
-    // When a user changes the value of profile or duration by clicking a button, change the parameter's value and make the API query again
+    // When a user changes the value of mode or time by clicking a button, change the parameter's value and make the API query again
     document.getElementById('params').addEventListener('change', (event) => {
-      if (event.target.name === 'profile') {
-        profile = event.target.value;
-      } else if (event.target.name === 'duration') {
-        minutes = event.target.value;
+      if (event.target.name === 'mode') {
+        mode = event.target.value;
+      } else if (event.target.name === 'time') {
+        time = event.target.value;
       }
-      getIso();
+      getIso(selectedPoint, mode, time);
     });
 
+    // 2. Add event listener for change for toggle
+    // Call function to toggle layer visibility
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("postoffices").checked
+      map.setLayoutProperty("singapore-postoffice", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("banks").checked
+      map.setLayoutProperty("singapore-banks", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("foodcentre").checked
+      map.setLayoutProperty("singapore-market-foodcentre", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("supermarkets").checked
+      map.setLayoutProperty("singapore-supermarkets", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("healthcare").checked
+      map.setLayoutProperty("singapore-healthcare", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("schools").checked
+      map.setLayoutProperty("singapore-market-schools", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    document.getElementById('toggleLayer').addEventListener('change', (event) => {
+      const state = document.getElementById("parks").checked
+      map.setLayoutProperty("singapore-parks-reserves", 'visibility', state ? 'visible' : 'none');
+      console.log(state)
+    });
+    
+
+ 
     map.on('load', () => {
       // Add the isochrome mapbox layer
       map.addSource('iso', {
@@ -104,29 +194,93 @@
           layout: {},
           paint: {
             // The fill color for the layer is set to a light purple
-            'fill-color': '#5a3fc0',
-            'fill-opacity': 0.3
+            // 'fill-color': '#5a3fc0',
+            'fill-color': '#4838BC',
+            'fill-opacity': 0.3,
+            // Add border properties
+            'fill-outline-color': '#18133F', // Border color
+            'fill-outline-width': 1,      // Border width in pixels
           }
-        },
-        'poi-label'
+        }      
       );
      
+      map.addControl(new mapboxgl.NavigationControl());
+
+      handleMapInteractivity();
+
       // Add a click event listener to the map for the tileset points
       map.on('click', "rental-blocks-geocoded", async (e) => {
         selectedPoint = e.features[0].geometry.coordinates;
-        getIso(selectedPoint);
+        getIso(selectedPoint, mode, time);
       });
+
+      console.log(map.getStyle().layers)
+
+      // Add a hover event for rental block
+      // Write code for what you want to appear in tooltip
+      // Style tooltip
+
     });
 
+    let popup = null;
 
-    // Create a function that sets up the Isochrone API query then makes an fetch call
-    async function getIso(coordinates) {
-      const query = await fetch(
-        `${urlBase}${profile}/${coordinates[0]},${coordinates[1]}?contours_minutes=${minutes}&polygons=true&access_token=${mapboxgl.accessToken}`,
-        { method: 'GET' }
-      );
-      const data = await query.json();
-      map.getSource('iso').setData(data);
+    function handleMapPopup(e) {
+      popup.remove();
+
+      const features = e.features[0].properties
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      popup
+        .setLngLat(coordinates)
+        .setHTML(
+          `<p class="">
+            This is rental <b>Block ${features['Block No']}</b> located on <b>${features['Street Name']}</b> in <b>${features['Town']}</b>. This block has <b>${features['Flat Type']}</b> flat types.
+          </p>
+          `
+        )
+        .addTo(map);
+
+      map.flyTo({
+        center: coordinates,
+        zoom: 14.8,
+        essential: true,
+      });
+    }
+
+    function handleLayerExit() {
+      map.getCanvas().style.cursor = '';
+    }
+
+    function handleMapInteractivity() {
+      // Initialise popup
+      popup = new mapboxgl.Popup({ closeButton: false, className: 'rental-popup' });
+
+      map.on('click', 'rental-blocks-geocoded', handleMapPopup);
+
+      // mouseover cursor
+      map.on('mouseover', "rental-blocks-geocoded", () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'rental-blocks-geocoded', handleLayerExit);
+    }
+
+    // Create a function that sets up the Isochrone API query then makes a fetch call to GeoAPIfy
+    async function getIso(coordinates, mode, time) {
+      const requestOptions = {
+        method: 'GET',
+      };
+
+      // console.log(coordinates, mode, time)
+
+      // Construct the URL for GeoAPIfy's Isoline API
+      const geoAPIfyURL = `https://api.geoapify.com/v1/isoline?lat=${coordinates[1]}&lon=${coordinates[0]}&type=time&mode=${mode}&range=${60 * time}&apiKey=23d6df5223844a29a2b281e27968bb44`;
+
+      fetch(geoAPIfyURL, requestOptions)
+        .then(response => response.json())
+        .then(data => {
+          // console.log(data)
+          map.getSource('iso').setData(data);
+        })
+        .catch(error => console.log('error', error));
     }
   </script>
 </body>
