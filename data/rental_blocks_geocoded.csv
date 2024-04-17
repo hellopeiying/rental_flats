@@ -1,0 +1,290 @@
+Town,Block No,Street Name,Address,Postal Code,Flat Type,Latitude,Longitude
+Pasir Ris,476A,Pasir Ris Dr 6,476A Pasir Ris Dr 6,511476,1-room & 2-room,1.3750594,103.95784
+Tampines,499C,Tampines Ave 9,499C Tampines Ave 9,523499,1-room & 2-room,1.3595021,103.9564619
+Tampines,492F,Tampines St 45,492F Tampines St 45,526492,1-room & 2-room,1.3638274,103.9563895
+Tampines,492E,Tampines St 45,492E Tampines St 45,525492,1-room & 2-room,1.3633352,103.9560496
+Tampines,471,Tampines St 44,471 Tampines St 44,520471,1-room & 2-room,1.3603633,103.9540778
+Tampines,466,Tampines St 44,466 Tampines St 44,520466,1-room & 2-room,1.3595398,103.9540551
+Tampines,299B,Tampines St 22,299B Tampines St 22,522299,1-room & 2-room,1.3494519,103.9538443
+Tampines,208A,Tampines Ave 2,208A Tampines Ave 2,521208,1-room & 2-room,1.3517282,103.9535338
+Tampines,441,Tampines St 43,441 Tampines St 43,520441,1-room & 2-room,1.3603745,103.952174
+Tampines,442,Tampines St 43,442 Tampines St 43,520442,1-room & 2-room,1.359551,103.9521514
+Tampines,204,Tampines St 21,204 Tampines St 21,520204,1-room & 2-room,1.3522054,103.9516346
+Bedok,38,Bedok Sth Rd,38 Bedok Sth Rd,460038,2-room,1.3209933,103.9386438
+Bedok,12,Bedok Sth Ave 2,12 Bedok Sth Ave 2,460012,1-room,1.3222585,103.9374146
+Bedok,13,Bedok Sth Rd,13 Bedok Sth Rd,460013,2-room,1.3200685,103.9365503
+Tampines,603A,Tampines Ave 9,603A Tampines Ave 9,521603,1-room & 2-room,1.3607288,103.93554
+Tampines,885A,Tampines St 83,885A Tampines St 83,521885,1-room & 2-room,1.3506557,103.932768
+Bedok,429A,Bedok Nth Rd,429A Bedok Nth Rd,461429,1-room & 2-room,1.3305716,103.9324786
+Tampines,872B,Tampines St 86,872B Tampines St 86,522872,1-room & 2-room,1.3552622,103.9313704
+Tampines,872A,Tampines St 86,872A Tampines St 86,521872,1-room & 2-room,1.3555087,103.9308022
+Bedok,544,Bedok Nth St 3,544 Bedok Nth St 3,460544,1-room,1.3332472,103.9275759
+Bedok,556,Bedok Nth St 3,556 Bedok Nth St 3,460556,1-room & 2-room,1.3332472,103.9275759
+Bedok,557,Bedok Nth St 3,557 Bedok Nth St 3,460557,1-room & 2-room,1.3332472,103.9275759
+Bedok,101,Bedok Nth Ave 4,101 Bedok Nth Ave 4,460101,2-room,1.3236038,103.9273405
+Bedok,106,Bedok Nth Ave 4,106 Bedok Nth Ave 4,460106,2-room,1.3236038,103.9273405
+Bedok,113,Bedok Nth St 2,113 Bedok Nth St 2,460113,2-room,1.3236038,103.9273405
+Bedok,114,Bedok Nth St 2,114 Bedok Nth St 2,460114,2-room,1.3236038,103.9273405
+Bedok,514,Bedok Nth Ave 2,514 Bedok Nth Ave 2,460514,2-room,1.3236038,103.9273405
+Bedok,541,Bedok Nth St 3,541 Bedok Nth St 3,460541,2-room,1.3236038,103.9273405
+Bedok,39,Chai Chee Ave,39 Chai Chee Ave,461039,1-room,1.326357,103.926094
+Bedok,38,Chai Chee Ave,38 Chai Chee Ave,461038,1-room,1.3259258,103.9257026
+Bedok,30,Chai Chee Ave,30 Chai Chee Ave,460030,1-room,1.3245642,103.9249301
+Bedok,31,Chai Chee Ave,31 Chai Chee Ave,461031,1-room,1.3242879,103.9248671
+Bedok,23,Chai Chee Rd,23 Chai Chee Rd,461023,1-room,1.3253251,103.9226012
+Bedok,24,Chai Chee Rd,24 Chai Chee Rd,460024,1-room,1.3248867,103.9225106
+Bedok,22,Chai Chee Rd,22 Chai Chee Rd,461022,1-room,1.3251835,103.9217855
+Marine Parade,52,Marine Ter,52 Marine Ter,440052,2-room,1.3058217,103.9166056
+Marine Parade,53,Marine Ter,53 Marine Ter,440053,2-room,1.3051731,103.9163476
+Marine Parade,51,Marine Ter,51 Marine Ter,440051,2-room,1.3063437,103.916257
+Marine Parade,16,Marine Ter,16 Marine Ter,440016,2-room,1.3043084,103.9140818
+Marine Parade,15,Marine Ter,15 Marine Ter,440015,2-room,1.3048576,103.9139459
+Punggol,621A,Edgefield Walk,621A Edgefield Walk,821621,1-room & 2-room,1.4007868,103.9102933
+Punggol,621B,Edgefield Walk,621B Edgefield Walk,822621,1-room & 2-room,1.4013566,103.9101169
+Sengkang,182,Rivervale Cres,182 Rivervale Cres,540182,1-room & 2-room,1.3904531,103.9091611
+Punggol,121A,Edgedale Plains,121A Edgedale Plains,821121,1-room & 2-room,1.3941058,103.9083905
+Geylang,12,Eunos Cres,12 Eunos Cres,400012,2-room,1.322285,103.904113
+Geylang,2,Eunos Cres,2 Eunos Cres,400002,2-room,1.3209039,103.902844
+Geylang,1,Eunos Cres,1 Eunos Cres,400001,2-room,1.3208025,103.9024792
+Punggol,206A,Punggol Pl,206A Punggol Pl,821206,1-room & 2-room,1.3992097,103.9015076
+Punggol,326B,Sumang Walk,326B Sumang Walk,822326,1-room & 2-room,1.412695,103.8996638
+Punggol,326A,Sumang Walk,326A Sumang Walk,821326,1-room & 2-room,1.4129738,103.8992702
+Hougang,316,Hougang Ave 7,316 Hougang Ave 7,530316,1-room & 2-room,1.3649315,103.8965009
+Hougang,313,Hougang Ave 5,313 Hougang Ave 5,530313,1-room & 2-room,1.3653135,103.894618
+Punggol,223A,Sumang Lane,223A Sumang Lane,821223,1-room & 2-room,1.4012971,103.892695
+Hougang,25,Hougang Ave 3,25 Hougang Ave 3,530025,2-room,1.365894,103.8916303
+Hougang,174C,Hougang Ave 1,174C Hougang Ave 1,533174,1-room & 2-room,1.3491493,103.8889644
+Hougang,174D,Hougang Ave 1,174D Hougang Ave 1,539174,1-room & 2-room,1.349197,103.8885545
+Geylang,94,Pipit Rd,94 Pipit Rd,370094,1-room,1.323252,103.8885268
+Geylang,70,Circuit Rd,70 Circuit Rd,370070,2-room,1.3252296,103.8881644
+Geylang,68,Circuit Rd,68 Circuit Rd,370068,2-room,1.325541,103.8880964
+Geylang,71,Circuit Rd,71 Circuit Rd,370071,2-room,1.3249925,103.8880511
+Geylang,72,Circuit Rd,72 Circuit Rd,370072,2-room,1.3245025,103.8878934
+Geylang,37,Circuit Rd,37 Circuit Rd,370037,2-room,1.3280546,103.8867459
+Sengkang,350,Anchorvale Rd,350 Anchorvale Rd,540350,1-room & 2-room,1.3929327,103.8865471
+Geylang,90,Pipit Rd,90 Pipit Rd,370090,1-room,1.3233406,103.8865256
+Geylang,52,Circuit Rd,52 Circuit Rd,370052,2-room,1.3242166,103.8856222
+Geylang,51,Circuit Rd,51 Circuit Rd,370051,2-room,1.3245626,103.8855595
+Geylang,96,Aljunied Cres,96 Aljunied Cres,380096,2-room,1.3216613,103.8853561
+Geylang,52,Cassia Cres,52 Cassia Cres,390052,1-room & 2-room,1.3105498,103.8853032
+Geylang,14,Old Airport Rd,14 Old Airport Rd,390014,2-room,1.3068057,103.8844941
+Geylang,12,Merpati Rd,12 Merpati Rd,370012,2-room,1.3278488,103.884404
+Geylang,100,Aljunied Cres,100 Aljunied Cres,380100,1-room,1.3209693,103.8840476
+Geylang,13,Merpati Rd,13 Merpati Rd,370013,2-room,1.3278261,103.8837362
+Geylang,14,Merpati Rd,14 Merpati Rd,370014,2-room,1.3278996,103.8831962
+Geylang,103,Aljunied Cres,103 Aljunied Cres,380103,2-room,1.3205358,103.8831333
+Hougang,999A,Buangkok Cres,999A Buangkok Cres,531999,1-room & 2-room,1.3847068,103.8810043
+Hougang,986D,Buangkok Cres,986D Buangkok Cres,535986,1-room & 2-room,1.3829372,103.8804145
+Hougang,986C,Buangkok Cres,986C Buangkok Cres,533986,1-room & 2-room,1.382643,103.880329
+Serangoon,8,Lor Lew Lian,8 Lor Lew Lian,531008,2-room,1.3488659,103.8767419
+Kallang/Whampoa,19,Upp Boon Keng Rd,19 Upp Boon Keng Rd,380019,2-room,1.3155661,103.8737344
+Sengkang,446A,Jln Kayu,446A Jln Kayu,791446,1-room & 2-room,1.392028,103.8726699
+Sengkang,463A,Sengkang West Way,463A Sengkang West Way,791463,1-room & 2-room,1.3932461,103.872096
+Sengkang,463B,Sengkang West Way,463B Sengkang West Way,792463,1-room & 2-room,1.3928171,103.8719458
+Serangoon,223A,Serangoon Ave 4,223A Serangoon Ave 4,551223,1-room & 2-room,1.3579584,103.8711976
+Kallang/Whampoa,61,Geylang Bahru,61 Geylang Bahru,330061,1-room,1.3223201,103.8701334
+Serangoon,157,Serangoon Nth Ave 1,157 Serangoon Nth Ave 1,550157,1-room & 2-room,1.3711171,103.8692687
+Kallang/Whampoa,62,Geylang Bahru,62 Geylang Bahru,330062,1-room,1.3211538,103.8685216
+Kallang/Whampoa,4,Beach Rd,4 Beach Rd,190004,1-room,1.304720074,103.8651117
+Kallang/Whampoa,5,Beach Rd,5 Beach Rd,190005,1-room,1.304361153,103.8647956
+Kallang/Whampoa,6,Beach Rd,6 Beach Rd,190006,1-room & 2-room,1.303994431,103.8644444
+Kallang/Whampoa,31,Bendemeer Rd,31 Bendemeer Rd,330031,1-room,1.3196053,103.8642733
+Kallang/Whampoa,9,Nth Bridge Rd,9 Nth Bridge Rd,190009,1-room & 2-room,1.3050274,103.8641541
+Kallang/Whampoa,8,Nth Bridge Rd,8 Nth Bridge Rd,190008,1-room & 2-room,1.3046487,103.8639019
+Kallang/Whampoa,7,Nth Bridge Rd,7 Nth Bridge Rd,190007,1-room & 2-room,1.3044701,103.8636155
+Kallang/Whampoa,10,Nth Bridge Rd,10 Nth Bridge Rd,190010,1-room,1.3056158,103.8635202
+Kallang/Whampoa,32,Bendemeer Rd,32 Bendemeer Rd,330032,1-room,1.3200403,103.8635113
+Kallang/Whampoa,33,Bendemeer Rd,33 Bendemeer Rd,330033,1-room,1.3196485,103.8628012
+Kallang/Whampoa,18,Jln Sultan,18 Jln Sultan,190018,2-room,1.3033355,103.8626835
+Kallang/Whampoa,19,Jln Sultan,19 Jln Sultan,190019,2-room,1.3037725,103.8624754
+Kallang/Whampoa,811,French Rd,811 French Rd,200811,1-room,1.307751175,103.8612423
+Kallang/Whampoa,8,French Rd,8 French Rd,200008,1-room,1.307194517,103.8607253
+Kallang/Whampoa,805,King George's Ave,805 King George's Ave,200805,2-room,1.3084966,103.8606304
+Kallang/Whampoa,20,Jln Tenteram,20 Jln Tenteram,320020,2-room,1.3268531,103.8601681
+Kallang/Whampoa,7,King George's Ave,7 King George's Ave,201007,1-room,1.3076854,103.8598963
+Kallang/Whampoa,21,Jln Tenteram,21 Jln Tenteram,320021,2-room,1.3263241,103.8598299
+Kallang/Whampoa,22,Jln Tenteram,22 Jln Tenteram,320022,2-room,1.3265645,103.8594434
+Kallang/Whampoa,2,Kitchener Rd,2 Kitchener Rd,200002,2-room,1.3079089,103.8591716
+Kallang/Whampoa,1,Maude Rd,1 Maude Rd,200001,2-room,1.3075047,103.8590934
+Toa Payoh,15,Lor 7 Toa Payoh,15 Lor 7 Toa Payoh,310015,1-room,1.3359415,103.859084
+Central Area,25,Jln Berseh,25 Jln Berseh,200025,2-room,1.3062864,103.8581069
+Ang Mo Kio,469,Ang Mo Kio Ave 10,469 Ang Mo Kio Ave 10,560469,2-room,1.3645508,103.856797
+Toa Payoh,5,Lor 7 Toa Payoh,5 Lor 7 Toa Payoh,310005,1-room,1.3385964,103.8558212
+Toa Payoh,31,Lor 5 Toa Payoh,31 Lor 5 Toa Payoh,310031,1-room,1.33326,103.8547308
+Ang Mo Kio,406,Ang Mo Kio Ave 10,406 Ang Mo Kio Ave 10,560406,2-room,1.3620328,103.8538267
+Toa Payoh,29,Lor 5 Toa Payoh,29 Lor 5 Toa Payoh,310029,2-room,1.333061,103.8537578
+Toa Payoh,68,Lor 5 Toa Payoh,68 Lor 5 Toa Payoh,310068,2-room,1.334725,103.853102
+Ang Mo Kio,420,Ang Mo Kio Ave 10,420 Ang Mo Kio Ave 10,560420,1-room,1.364968,103.8530119
+Toa Payoh,64,Lor 5 Toa Payoh,64 Lor 5 Toa Payoh,310064,2-room,1.335844,103.8526264
+Toa Payoh,63,Lor 5 Toa Payoh,63 Lor 5 Toa Payoh,310063,2-room,1.3359732,103.8521683
+Toa Payoh,52,Lor 6 Toa Payoh,52 Lor 6 Toa Payoh,310052,2-room,1.3380164,103.8519996
+Toa Payoh,55,Lor 5 Toa Payoh,55 Lor 5 Toa Payoh,310055,2-room,1.3374177,103.8512013
+Yishun,461A,Yishun Ave 6,461A Yishun Ave 6,761461,1-room & 2-room,1.4283398,103.8505988
+Yishun,461B,Yishun Ave 6,461B Yishun Ave 6,762461,1-room & 2-room,1.4283905,103.8505484
+Toa Payoh,58,Lor 4 Toa Payoh,58 Lor 4 Toa Payoh,310058,2-room,1.336738,103.8504932
+Toa Payoh,56,Lor 4 Toa Payoh,56 Lor 4 Toa Payoh,310056,2-room,1.3370682,103.8503578
+Toa Payoh,54,Lor 5 Toa Payoh,54 Lor 5 Toa Payoh,310054,2-room,1.3373801,103.8502901
+Ang Mo Kio,314,Ang Mo Kio Ave 3,314 Ang Mo Kio Ave 3,560314,2-room,1.3662743,103.8501284
+Kallang/Whampoa,47,Owen Rd,47 Owen Rd,210047,1-room & 2-room,1.3148367,103.8501126
+Ang Mo Kio,510,Ang Mo Kio Ave 8,510 Ang Mo Kio Ave 8,560510,2-room,1.3734149,103.8492068
+Toa Payoh,105,Lor 1 Toa Payoh,105 Lor 1 Toa Payoh,310105,2-room,1.3404101,103.8490957
+Toa Payoh,104,Lor 1 Toa Payoh,104 Lor 1 Toa Payoh,310104,2-room,1.3401102,103.8490935
+Ang Mo Kio,508,Ang Mo Kio Ave 8,508 Ang Mo Kio Ave 8,560508,2-room,1.3737824,103.8490256
+Toa Payoh,103,Lor 1 Toa Payoh,103 Lor 1 Toa Payoh,310103,2-room,1.3401354,103.8484738
+Toa Payoh,106,Lor 1 Toa Payoh,106 Lor 1 Toa Payoh,310106,2-room,1.3404085,103.8481424
+Ang Mo Kio,323,Ang Mo Kio Ave 3,323 Ang Mo Kio Ave 3,560323,2-room,1.3679306,103.8476677
+Ang Mo Kio,318,Ang Mo Kio Ave 1,318 Ang Mo Kio Ave 1,560318,1-room,1.3655668,103.8476442
+Yishun,436,Yishun Ave 11,436 Yishun Ave 11,760436,1-room & 2-room,1.4212834,103.8462391
+Yishun,438,Yishun Ave 11,438 Yishun Ave 11,760438,1-room,1.4217454,103.8462174
+Toa Payoh,160,Lor 1 Toa Payoh,160 Lor 1 Toa Payoh,310160,2-room,1.3309436,103.8450359
+Toa Payoh,161,Lor 1 Toa Payoh,161 Lor 1 Toa Payoh,310161,2-room,1.3305263,103.8449493
+Ang Mo Kio,125,Ang Mo Kio Ave 6,125 Ang Mo Kio Ave 6,560125,2-room,1.37148,103.844825
+Toa Payoh,150,Lor 1 Toa Payoh,150 Lor 1 Toa Payoh,310150,2-room,1.3338041,103.8445048
+Ang Mo Kio,123,Ang Mo Kio Ave 6,123 Ang Mo Kio Ave 6,560123,1-room,1.3705313,103.8443378
+Ang Mo Kio,203,Ang Mo Kio Ave 3,203 Ang Mo Kio Ave 3,560203,2-room,1.3676645,103.8441886
+Toa Payoh,148,Lor 1 Toa Payoh,148 Lor 1 Toa Payoh,310148,2-room,1.3350356,103.8441719
+Toa Payoh,149,Lor 1 Toa Payoh,149 Lor 1 Toa Payoh,310149,2-room,1.3337598,103.8438262
+Ang Mo Kio,647,Ang Mo Kio Ave 6,647 Ang Mo Kio Ave 6,560647,2-room,1.379017,103.8435905
+Ang Mo Kio,206,Ang Mo Kio Ave 1,206 Ang Mo Kio Ave 1,560206,2-room,1.3666331,103.8434179
+Central Area,5,Banda St,5 Banda St,50005,1-room,1.2811595,103.8433188
+Central Area,333,Kreta Ayer Rd,333 Kreta Ayer Rd,80333,2-room,1.2807407,103.8432603
+Toa Payoh,170,Lor 1 Toa Payoh,170 Lor 1 Toa Payoh,310170,1-room,1.3313414,103.8426842
+Ang Mo Kio,645,Ang Mo Kio Ave 6,645 Ang Mo Kio Ave 6,560645,2-room,1.3793182,103.8422318
+Central Area,51,Chin Swee Rd,51 Chin Swee Rd,160051,1-room,1.2874114,103.842057
+Ang Mo Kio,217,Ang Mo Kio Ave 1,217 Ang Mo Kio Ave 1,560217,1-room & 2-room,1.3655905,103.8418112
+Yishun,510B,Yishun St 51,510B Yishun St 51,762510,1-room & 2-room,1.4152466,103.8414166
+Yishun,269B,Yishun St 22,269B Yishun St 22,762269,1-room & 2-room,1.4364804,103.8412293
+Yishun,269A,Yishun St 22,269A Yishun St 22,761269,1-room & 2-room,1.4366955,103.8407432
+Yishun,510A,Yishun St 51,510A Yishun St 51,761510,1-room & 2-room,1.4149467,103.8407274
+Ang Mo Kio,641,Ang Mo Kio Ave 4,641 Ang Mo Kio Ave 4,560641,2-room,1.3786447,103.8403748
+Bishan,26,Sector A Sin Ming Ind Est,26 Sector A Sin Ming Ind Est,570026,1-room,1.355906003,103.8402395
+Ang Mo Kio,626,Ang Mo Kio Ave 4,626 Ang Mo Kio Ave 4,560626,2-room,1.3812387,103.8402377
+Central Area,1,Jln Kukoh,1 Jln Kukoh,161001,2-room,1.2881765,103.8398758
+Central Area,52,Chin Swee Rd,52 Chin Swee Rd,160052,1-room & 2-room,1.2877346,103.8398111
+Central Area,2,Jln Kukoh,2 Jln Kukoh,163002,1-room,1.2886365,103.8397861
+Central Area,3,Jln Kukoh,3 Jln Kukoh,161003,1-room,1.2882066,103.8397554
+Central Area,4,Jln Minyak,4 Jln Minyak,163004,2-room,1.2881613,103.8388936
+Central Area,13,York Hill,13 York Hill,162013,1-room & 2-room,1.2868907,103.8381557
+Central Area,12,York Hill,12 York Hill,163012,1-room & 2-room,1.2869961,103.8381304
+Ang Mo Kio,224,Ang Mo Kio Ave 1,224 Ang Mo Kio Ave 1,560224,2-room,1.3666261,103.8380333
+Central Area,5,Jln Minyak,5 Jln Minyak,161005,2-room,1.2878246,103.8378613
+Central Area,11,York Hill,11 York Hill,162011,1-room & 2-room,1.2872297,103.837788
+Central Area,6,Jln Minyak,6 Jln Minyak,162006,2-room,1.2876554,103.8369927
+Ang Mo Kio,116,Ang Mo Kio Ave 4,116 Ang Mo Kio Ave 4,560116,2-room,1.373387,103.8364304
+Ang Mo Kio,115,Ang Mo Kio Ave 4,115 Ang Mo Kio Ave 4,560115,1-room,1.372978,103.8363441
+Ang Mo Kio,257,Ang Mo Kio Ave 4,257 Ang Mo Kio Ave 4,560257,1-room,1.370197,103.8358007
+Bishan,410,Sin Ming Ave,410 Sin Ming Ave,570410,1-room & 2-room,1.3628513,103.8355619
+Ang Mo Kio,245,Ang Mo Kio Ave 3,245 Ang Mo Kio Ave 3,560245,2-room,1.3676304,103.8350001
+Ang Mo Kio,244,Ang Mo Kio Ave 3,244 Ang Mo Kio Ave 3,560244,2-room,1.3672733,103.8346232
+Sembawang,106A,Canberra St,106A Canberra St,751106,1-room & 2-room,1.4484753,103.8331463
+Yishun,162,Yishun St 11,162 Yishun St 11,760162,1-room & 2-room,1.4330003,103.8324267
+Bukit Merah,10,Jln Bt Ho Swee,10 Jln Bt Ho Swee,161010,2-room,1.2874609,103.8324209
+Sembawang,106B,Canberra St,106B Canberra St,752106,1-room & 2-room,1.4482209,103.8323487
+Bukit Merah,2,Jln Bt Ho Swee,2 Jln Bt Ho Swee,162002,2-room,1.2873461,103.831838
+Bukit Merah,2,Spooner Rd,2 Spooner Rd,168790,2-room,1.2757255,103.8311145
+Bukit Merah,1,Spooner Rd,1 Spooner Rd,168789,1-room,1.2753667,103.8304685
+Yishun,108,Yishun Ring Rd,108 Yishun Ring Rd,760108,1-room & 2-room,1.4323022,103.8290596
+Bukit Merah,79,Indus Rd,79 Indus Rd,161079,1-room,1.2910359,103.8290106
+Bukit Merah,124,Kim Tian Pl,124 Kim Tian Pl,160124,1-room,1.2840221,103.8280113
+Bukit Merah,50,Havelock Rd,50 Havelock Rd,160050,2-room,1.2898051,103.8268338
+Bukit Merah,110,Jln Bt Merah,110 Jln Bt Merah,160110,2-room,1.279832,103.8267479
+Bukit Merah,116,Jln Bt Merah,116 Jln Bt Merah,160116,2-room,1.281405,103.8266711
+Bukit Merah,42,Beo Cres,42 Beo Cres,160042,2-room,1.2894955,103.8266301
+Bukit Merah,117,Jln Bt Merah,117 Jln Bt Merah,160117,2-room,1.2819097,103.8265621
+Bukit Merah,115,Jln Bt Merah,115 Jln Bt Merah,160115,2-room,1.2810874,103.8265395
+Bukit Merah,44,Beo Cres,44 Beo Cres,160044,2-room,1.2889112,103.8264942
+Bukit Merah,48,Lower Delta Rd,48 Lower Delta Rd,160048,2-room,1.2889321,103.8260187
+Bukit Merah,105,Jln Bt Merah,105 Jln Bt Merah,160105,1-room & 2-room,1.2806741,103.8248474
+Bukit Merah,106,Jln Bt Merah,106 Jln Bt Merah,160106,1-room & 2-room,1.2802391,103.8245696
+Bukit Merah,104,Jln Bt Merah,104 Jln Bt Merah,160104,2-room,1.2810444,103.8243884
+Bukit Merah,123,Bt Merah View,123 Bt Merah View,151123,1-room,1.2841948,103.823211
+Bukit Merah,41,Telok Blangah Rise,41 Telok Blangah Rise,90041,2-room,1.271481,103.8230299
+Bukit Merah,19,Telok Blangah Cres,19 Telok Blangah Cres,90019,1-room,1.277487,103.8227728
+Bukit Merah,121,Bt Merah View,121 Bt Merah View,151121,1-room,1.2831055,103.8227653
+Bukit Merah,117,Bt Merah View,117 Bt Merah View,151117,1-room,1.2842933,103.8219204
+Bukit Merah,29,Telok Blangah Rise,29 Telok Blangah Rise,90029,2-room,1.2737926,103.8212358
+Bukit Merah,91,Henderson Rd,91 Henderson Rd,150091,2-room,1.2878825,103.8207883
+Bukit Merah,93,Henderson Rd,93 Henderson Rd,150093,2-room,1.286952,103.8204487
+Sembawang,512,Wellington Circle,512 Wellington Circle,750512,1-room & 2-room,1.4539754,103.8204034
+Bukit Merah,92,Henderson Rd,92 Henderson Rd,150092,2-room,1.287402411,103.8203409
+Sembawang,513,Wellington Circle,513 Wellington Circle,750513,1-room & 2-room,1.4541979,103.8200412
+Bukit Merah,89,Redhill Cl,89 Redhill Cl,150089,1-room,1.2854624,103.8187734
+Bukit Merah,90,Redhill Cl,90 Redhill Cl,150090,1-room,1.2849695,103.8187017
+Bukit Merah,4,Telok Blangah Cres,4 Telok Blangah Cres,90004,1-room,1.2788108,103.818411
+Bukit Merah,78,Redhill Lane,78 Redhill Lane,150078,2-room,1.2884705,103.8184019
+Bukit Merah,3,Telok Blangah Cres,3 Telok Blangah Cres,90003,1-room,1.27867,103.8174148
+Bukit Merah,71,Redhill Rd,71 Redhill Rd,150071,1-room & 2-room,1.2873405,103.8172391
+Bukit Merah,72,Redhill Rd,72 Redhill Rd,150072,1-room & 2-room,1.2875643,103.8163337
+Sembawang,364B,Sembawang Crescent,364B Sembawang Crescent,752364,1-room & 2-room,1.4444997,103.815515
+Sembawang,364A,Sembawang Crescent,364A Sembawang Crescent,751364,1-room & 2-room,1.4444993,103.8154836
+Bukit Merah,59,Lengkok Bahru,59 Lengkok Bahru,150059,2-room,1.2888505,103.8143356
+Bukit Merah,57,Lengkok Bahru,57 Lengkok Bahru,151057,2-room,1.2882677,103.8142532
+Sembawang,462,Sembawang Dr,462 Sembawang Dr,750462,1-room & 2-room,1.454509,103.8141623
+Bukit Merah,56,Lengkok Bahru,56 Lengkok Bahru,150056,2-room,1.2879745,103.8140639
+Bukit Merah,58,Lengkok Bahru,58 Lengkok Bahru,150058,2-room,1.2885423,103.8139424
+Bukit Merah,61,Lengkok Bahru,61 Lengkok Bahru,150061,2-room,1.2898778,103.8137017
+Bukit Merah,55,Lengkok Bahru,55 Lengkok Bahru,151055,2-room,1.2875387,103.8135205
+Sembawang,363C,Sembawang Crescent,363C Sembawang Crescent,753363,1-room & 2-room,1.445629,103.813019
+Bukit Merah,45,Telok Blangah Dr,45 Telok Blangah Dr,100045,2-room,1.2725191,103.8093206
+Bukit Merah,76,Telok Blangah Dr,76 Telok Blangah Dr,100076,2-room,1.2744038,103.8088114
+Bukit Merah,3,Jln Bt Merah,3 Jln Bt Merah,150003,1-room,1.287028,103.8066833
+Woodlands,785A,Woodlands Rise,785A Woodlands Rise,731785,1-room & 2-room,1.4465464,103.8049077
+Queenstown,155,Mei Ling St,155 Mei Ling St,140155,2-room,1.2930538,103.8047589
+Queenstown,156,Mei Ling St,156 Mei Ling St,140156,2-room,1.2930556,103.804442
+Woodlands,693D,Woodlands Ave 6,693D Woodlands Ave 6,734693,1-room & 2-room,1.4374669,103.8042742
+Queenstown,151,Mei Ling St,151 Mei Ling St,140151,1-room,1.2945628,103.8030384
+Queenstown,45,Stirling Rd,45 Stirling Rd,140045,1-room & 2-room,1.297484501,103.8030218
+Queenstown,49,Stirling Rd,49 Stirling Rd,141049,1-room & 2-room,1.297547777,103.8021613
+Queenstown,48,Stirling Rd,48 Stirling Rd,141048,1-room & 2-room,1.298047104,103.8016794
+Queenstown,1,Holland Cl,1 Holland Cl,271001,1-room,1.309137,103.7968581
+Woodlands,852,Woodlands St 83,852 Woodlands St 83,730852,1-room & 2-room,1.4394663,103.7922303
+Woodlands,569A,Champions Way,569A Champions Way,731569,1-room & 2-room,1.4298987,103.7897761
+Woodlands,569B,Champions Way,569B Champions Way,732569,1-room & 2-room,1.4304515,103.7894588
+Queenstown,16,Ghim Moh Rd,16 Ghim Moh Rd,270016,2-room,1.3094076,103.7878033
+Queenstown,17,Ghim Moh Rd,17 Ghim Moh Rd,270017,2-room,1.3099937,103.7876222
+Queenstown,18,Ghim Moh Rd,18 Ghim Moh Rd,270018,2-room,1.3102163,103.7870789
+Woodlands,806,Woodlands St 81,806 Woodlands St 81,730806,1-room & 2-room,1.4414125,103.786681
+Queenstown,4,Dover Rd,4 Dover Rd,130004,2-room,1.3038064,103.7794345
+Woodlands,180C,Marsiling Rd,180C Marsiling Rd,733180,1-room & 2-room,1.4396436,103.7785907
+Woodlands,16,Marsiling Lane,16 Marsiling Lane,730016,2-room,1.4423455,103.7779343
+Woodlands,3,Marsiling Rd,3 Marsiling Rd,730003,1-room,1.4393451,103.7763951
+Woodlands,182A,Woodlands St 13,182A Woodlands St 13,731182,1-room & 2-room,1.4349105,103.7762102
+Woodlands,185A,Woodlands St 13,185A Woodlands St 13,731185,1-room & 2-room,1.4359835,103.7760119
+Woodlands,4,Marsiling Rd,4 Marsiling Rd,730004,1-room,1.439019,103.7757161
+Woodlands,218,Marsiling Cres,218 Marsiling Cres,730218,2-room,1.4464646,103.7734967
+Clementi,366,Clementi Ave 2,366 Clementi Ave 2,120366,1-room & 2-room,1.3125343,103.7717325
+Clementi,367,Clementi Ave 2,367 Clementi Ave 2,120367,1-room & 2-room,1.3129376,103.7715967
+Clementi,419,Clementi Ave 1,419 Clementi Ave 1,120419,1-room & 2-room,1.3101863,103.7695824
+Clementi,422,Clementi Ave 1,422 Clementi Ave 1,120422,1-room & 2-room,1.3091903,103.7692182
+Clementi,344,Clementi Ave 5,344 Clementi Ave 5,120344,2-room,1.3180754,103.7690618
+Bukit Panjang,646A,Senja Rd,646A Senja Rd,671646,1-room & 2-room,1.388035,103.7638095
+Bukit Panjang,632B,Senja Rd,632B Senja Rd,672632,1-room & 2-room,1.384443,103.7591817
+Bukit Panjang,632A,Senja Rd,632A Senja Rd,671632,1-room & 2-room,1.3850016,103.7582643
+Choa Chu Kang,9,Teck Whye Lane,9 Teck Whye Lane,680009,2-room,1.3800408,103.7541021
+Choa Chu Kang,165A,Teck Whye Cres,165A Teck Whye Cres,681165,1-room & 2-room,1.3829109,103.7533229
+Bukit Batok,210A,Bt Batok St 21,210A Bt Batok St 21,651210,1-room & 2-room,1.3457226,103.7507613
+Bukit Batok,412,Bt Batok West Ave 4,412 Bt Batok West Ave 4,650412,1-room & 2-room,1.3648209,103.7465664
+Bukit Batok,109,Bt Batok West Ave 6,109 Bt Batok West Ave 6,650109,1-room & 2-room,1.3469891,103.7461618
+Choa Chu Kang,813A,Choa Chu Kang Ave 7,813A Choa Chu Kang Ave 7,681813,1-room & 2-room,1.3739801,103.7449757
+Choa Chu Kang,537,Choa Chu Kang St 51,537 Choa Chu Kang St 51,680537,1-room & 2-room,1.3921641,103.7441591
+Choa Chu Kang,536,Choa Chu Kang St 51,536 Choa Chu Kang St 51,680536,1-room & 2-room,1.3916599,103.744151
+Jurong East,240B,Jurong East Ave 1,240B Jurong East Ave 1,602240,1-room & 2-room,1.3409345,103.7426358
+Bukit Batok,465A,Bt Batok West Ave 8,465A Bt Batok West Ave 8,651465,1-room & 2-room,1.3575172,103.7424026
+Bukit Batok,435A,Bt Batok West Ave 5,435A Bt Batok West Ave 5,651435,1-room & 2-room,1.3595567,103.7405445
+Bukit Batok,447A,Bt Batok West Ave 9,447A Bt Batok West Ave 9,651447,1-room & 2-room,1.3523528,103.739896
+Jurong East,374,Jurong East St 32,374 Jurong East St 32,600374,1-room & 2-room,1.3497227,103.7326349
+Jurong East,373,Jurong East St 32,373 Jurong East St 32,600373,1-room & 2-room,1.3494236,103.7324691
+Jurong West,116,Ho Ching Rd,116 Ho Ching Rd,610116,2-room,1.3348007,103.7232356
+Jurong West,117,Ho Ching Rd,117 Ho Ching Rd,610117,2-room,1.335113,103.723063
+Jurong West,118,Corporation Dr,118 Corporation Dr,610118,2-room,1.3353125,103.7227111
+Jurong West,191,Boon Lay Dr,191 Boon Lay Dr,640191,1-room & 2-room,1.344179,103.7124931
+Jurong West,188,Boon Lay Dr,188 Boon Lay Dr,640188,1-room & 2-room,1.3440115,103.7108636
+Jurong West,177,Boon Lay Dr,177 Boon Lay Dr,640177,1-room & 2-room,1.3478792,103.7095737
+Jurong West,179,Boon Lay Dr,179 Boon Lay Dr,640179,1-room & 2-room,1.3471107,103.7090324
+Jurong West,178,Boon Lay Dr,178 Boon Lay Dr,640178,1-room & 2-room,1.3474019,103.7088533
+Jurong West,967A,Jurong West St 93,967A Jurong West St 93,641967,1-room & 2-room,1.34083,103.6933286
+Jurong West,967B,Jurong West St 93,967B Jurong West St 93,642967,1-room & 2-room,1.3410018,103.6930411
+Queenstown,103,Commonwealth Cres,103 Commonwealth Cres,140103,2-room,1.308385756,103.8001803
+Queenstown,104,Commonwealth Cres,104 Commonwealth Cres,140104,2-room,1.307983616,103.7999465
+Queenstown,106,Commonwealth Cres,106 Commonwealth Cres,140106,2-room,1.308300618,103.7996204
+Queenstown,107,Commonwealth Cres,107 Commonwealth Cres,140107,2-room,1.3078624,103.7992507
