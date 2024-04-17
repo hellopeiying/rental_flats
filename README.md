@@ -2,6 +2,8 @@
 
 This interactive map visualises what key amenities, facilities and services are accessible from Housing Development Board (HDB) rental flats within fixed time-distances in Singapore. It is meant to empower low-income families in their rental flat application processes to decide where best in Singapore to live. 
 
+The map can be accessed here: https://rental-flats.vercel.app/ 
+
 ## What is this project about? 
 
 As a small and highly urbanised state, it is often said that nothing in Singapore is ever too far away. It takes only half an hour to drive from one end of the country to the other, and two hours by public transport. 
@@ -51,13 +53,19 @@ This project was heavily dependent on the algorithms and technical processes aff
 
 ## References and sources
 
+Bay, Ann-Helén, dir. 2022. Why Is It so Hard to Escape Poverty? https://www.youtube.com/watch?v=D9N7QaIOkG8.
+
 Carmichael, Fiona, Christian K. Darko, Patricia Daley, Joanne Duberley, Marco Ercolani, Tim Schwanen, and Daniel Wheatley. 2024. “Time Poverty and Gender in Urban sub‐Saharan Africa: Long Working Days and Long Commutes in Ghana’s Greater Accra Metropolitan Area.” Journal of International Development 36 (1): 343–64. https://doi.org/10.1002/jid.3817.
 
 Chenou, Jean-Marie, and Carolina Cepeda-Másmela. 2019. “#NiUnaMenos: Data Activism From the Global South.” Television & New Media 20 (4): 396–411. https://doi.org/10.1177/1527476419828995.
 
+DBS. n.d. “Bank Branches & ATMs.” Accessed April 3, 2024. https://www.dbs.com.sg/index/locator.page?filter=PB.
+
 Elwood, Sarah. 2008. “Volunteered Geographic Information: Future Research Directions Motivated by Critical, Participatory, and Feminist GIS.” GeoJournal 72 (3–4): 173–83. https://doi.org/10.1007/s10708-008-9186-0.
 
 Ferguson, James. 2020. “The Social Life of Cash Payments: Money, Markets, and the Mutualities of Poverty.” In Give a Man a Fish, 119–40. Duke University Press. https://doi.org/10.1515/9780822375524-007.
+
+Geoapify. 2020. “Isoline API | Isochrones and Isodistances.” Geoapify. January 23, 2020. https://www.geoapify.com/isoline-api/.
 
 HDB. 2024. “Eligibility Criteria and Schemes.” January 18, 2024. https://www.hdb.gov.sg/residential/renting-a-flat/renting-from-hdb/public-rental-scheme/eligibility.
 ———. n.d. “Map of HDB Rental Flats in Singapore.” Housing Development Board. Accessed April 3, 2024. https://services2.hdb.gov.sg/webapp/AA11EMAP/AA11PMainPage.
@@ -70,15 +78,20 @@ Loh, Pei Ying. 2022. “How Attainable Is the Singapore Dream?” Kontinentalist
 
 Mapbox. n.d. “What Are Isochrones?” Accessed April 13, 2024. https://www.mapbox.com/insights/isochrones.
 
+Ministry of Education. n.d. “School Directory and Information.” CSV. Data.gov.sg. Accessed April 3, 2024. https://beta.data.gov.sg/collections/457/datasets/d_9aba12b5527843afb0b2e8e4ed6ac6bd/view.
+
 National Environment Agency. 2023. “NEA Market and Food Centre.” Geojson. Data.gov.sg. https://beta.data.gov.sg/collections/1389/datasets/d_a57a245b3cf3ec76ad36d55393a16e97/view.
 
 National Parks Board. 2023. “NParks Parks and Nature Reserves.” Geojson. Data.gov.sg. https://beta.data.gov.sg/collections/1489/datasets/d_77d7ec97be83d44f61b85454f844382f/view.
 
 Ng, Irene. 2023. “Going beyond Income Poverty in Singapore: Exploring Digital, Attention and Time Poverties.” Southeast Asian Affairs 2023 (1): 291–301.
 
+Platt, Lucinda. 2019. “Income, Wealth and Poverty.” In Understanding Inequalities: Stratification and Difference, Second edition, 210–36. Cambridge, UK ; Medford, MA: Polity.
+
+Shanyang, Yin. 2017. “Isochronic Singapore: A Gentle Introduction to Isochrone Maps.” Medium (blog). December 6, 2017. https://medium.com/@yinshanyang/isochronic-singapore-a-gentle-introduction-to-isochrone-maps-9cceebc72f60.
+
 Singapore Food Agency. 2019. “Supermarkets.” Geojson. Data.gov.sg. https://beta.data.gov.sg/collections/1451/datasets/d_cac2c32f01960a3ad7202a99c27268a0/view.
 
-TED-Ed, dir. 2022. Why Is It so Hard to Escape Poverty? - Ann-Helén Bay. https://www.youtube.com/watch?v=D9N7QaIOkG8.
-
+Singpost. n.d. “List of Post Office Locations.” Singapore Post. Accessed April 17, 2024. https://www.singpost.com/list-of-post-offices.
 Teo, Youyenn. 2019. This Is What Inequality Looks like: Essays. New edition. Singapore: Ethos Books.
 
