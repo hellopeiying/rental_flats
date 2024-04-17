@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Demo: Get started with the Isochrone API</title>
+  <title>Housing Development Board (HDB) Rental Flat Selector</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Mapbox GL JS -->
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
@@ -43,18 +43,72 @@
     a {
         text-decoration: underline;
     }
-
+    #box {
+        max-width: 300px;
+    }
+    .instructions {
+        margin-top: 10px;
+    }
+    #params {
+        margin-top: 20px;
+    }
+    #toggleLayer {
+        margin-top: 20px;
+    }
+    .source {
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 600px) {
+  #box {
+    width: 150px;
+  }
+  .body-text {
+        font-size: 8px;
+        line-height: 0.8;
+    }
+    h1 {
+        font-size: 10px;
+        line-height: 1;
+    }
+    h4 {
+        font-size: 8px;
+        line-height: 1;
+    }
+    p {
+        font-size: 8px;
+        line-height: 1;
+    }
+    .instructions {
+        margin-top: 10px;
+    }
+    #params {
+        margin-top: 10px;
+    }
+    #toggleLayer {
+        margin-top: 10px;
+    }
+    .source {
+        margin-top: 10px;
+    }
+    .toggle {
+        font-size: 8px;
+        line-height: 1;
+        padding: 2px 5px;
+        border-radius: 10px;
+    }
+}
   </style>
 </head>
 <body>
   <div id="map"></div>
-  <div class="absolute fl my24 mx24 py24 px24 bg-gray-faint round" style="max-width: 300px;">
-    <h1 class="txt-bold mb6">Mapping time-distance poverty</h1>
-    <div class="instructions" style="margin-top: 20px;">
+  <div id="box" class="absolute fl my24 mx24 py24 px24 bg-gray-faint round">
+    <h1 class="txt-bold mb6">Housing Development Board (HDB) Rental Flat Selector</h1>
+    <div class="instructions">
+        <p>Applying for a rental flat? Use this map to pick a block that is well-located, with what you need nearby.</p><br>
         <h4 class="txt-bold mb6">Instructions on how to use this map</h4>
         <p>Each red dot represents a block of rental flats. Choose your time and travel parameters, and click on a rental flat to view what is within its time distance.</p>
       </div>      
-    <form id="params" style="margin-top: 20px;">
+    <form id="params">
       <h4 class="txt-bold mb6">Choose a travel mode:</h4>
       <div class="mb12 mr12 toggle-group align-center">
         <label class="toggle-container">
@@ -88,7 +142,7 @@
     </form>
 
     <!-- 1. Add toggle switch for layers here -->
-    <div id="toggleLayer" style="margin-top: 20px;">
+    <div id="toggleLayer">
     <h4 class="txt-bold mb6">Select essential amenities & services</h4>
       <input type="checkbox" id="postoffices" name="postoffices" value="postoffices" unchecked>
       <label for="postoffices" class="body-text">Post Offices</label><br>
@@ -105,7 +159,7 @@
       <input type="checkbox" id="parks" name="parks" value="parks" unchecked>
       <label for="parks" class="body-text">Parks & Nature Reserves</label><br>
     </div>
-    <div class="source" style="margin-top: 20px;">
+    <div class="source">
         <p>Details on this project's methodology and datasets are available on <a href="https://github.com/hellopeiying/rental_flats">Github</a>.</p>
     </div>
   </div>
