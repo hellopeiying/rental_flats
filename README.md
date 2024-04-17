@@ -37,7 +37,7 @@ This map hence visualises the following:
 | Primary and Secondary Schools    | Education                 | Ministry of Education      | https://beta.data.gov.sg/collections/457/datasets/d_9aba12b5527843afb0b2e8e4ed6ac6bd/view | 3 April 2024  | singapore_schools.csv                                                           | 
 | Parks and Nature Reserves        | Parks                     | National Parks Board      | https://beta.data.gov.sg/collections/1489/datasets/d_77d7ec97be83d44f61b85454f844382f/view | 3 April 2024  | singapore_parks_reserves.geojson                                                           | 
 
-These datasets have been chosen based on the anecdotes provided in interview excerpts in Teo You Yenn’s book, This is What Inequality Looks Like, reflecting the often frequented locations by low-income families in Singapore. 
+These datasets have been chosen based on the anecdotes provided in interview excerpts in Teo You Yenn’s book, This is What Inequality Looks Like, reflecting the often frequented locations by low-income families in Singapore. They can be found in the data folder in this git repository.
 
 ## Tools, methodology, and limitations
 
