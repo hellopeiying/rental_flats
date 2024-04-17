@@ -28,16 +28,16 @@ This map hence visualises the following:
 
 | Title                            | Category/Type             | Source                     | Link                                                                       | Date accessed | File Name                                                |
 |----------------------------------|---------------------------|----------------------------|----------------------------------------------------------------------------|---------------|----------------------------------------------------------|
-| HDB Rental Flats                 | Housing                   | Housing Development Board  | https://services2.hdb.gov.sg/webapp/AA11EMAP/AA11PMainPage | 3 April 2024  |                                                            |
-| Post Offices                     | Banking and Payment Services | SingPost                  | https://www.singpost.com/list-of-post-offices               | 7 April 2024  |                                                            |
-| Bank Offices (DBS/POSB)          | Banking and Payment Services | DBS Bank                  | https://www.dbs.com.sg/index/locator.page?filter=PB | 7 April 2024  |                                                            |
-| Food Centres & Markets           | Food & Essentials         | National Environment Agency | https://beta.data.gov.sg/collections/1389/datasets/d_a57a245b3cf3ec76ad36d55393a16e97/view | 3 April 2024  |                                                            |
-| Supermarkets                     | Food & Essentials         | Singapore Food Agency     | https://beta.data.gov.sg/collections/1451/datasets/d_cac2c32f01960a3ad7202a99c27268a0/view         | 3 April 2024  |                                                            |
-| Health Facilities                | Healthcare                | OpenStreetMap              | https://data.humdata.org/dataset/hotosm_sgp_health_facilities | 3 April 2024  |                                                            |
-| Primary and Secondary Schools    | Education                 | Ministry of Education      | https://beta.data.gov.sg/collections/457/datasets/d_9aba12b5527843afb0b2e8e4ed6ac6bd/view | 3 April 2024  |                                                            |
-| Parks and Nature Reserves        | Parks                     | National Parks Board      | https://beta.data.gov.sg/collections/1489/datasets/d_77d7ec97be83d44f61b85454f844382f/view | 3 April 2024  |                                                            |
+| HDB Rental Flats                 | Housing                   | Housing Development Board  | https://services2.hdb.gov.sg/webapp/AA11EMAP/AA11PMainPage | 3 April 2024  | rental_blocks_geocoded.csv                                                           |
+| Post Offices                     | Banking and Payment Services | SingPost                  | https://www.singpost.com/list-of-post-offices               | 7 April 2024  | singapore_postoffices.csv                                                           |
+| Bank Offices (DBS/POSB)          | Banking and Payment Services | DBS Bank                  | https://www.dbs.com.sg/index/locator.page?filter=PB | 7 April 2024  | singapore_banks.csv                                                            |
+| Food Centres & Markets           | Food & Essentials         | National Environment Agency | https://beta.data.gov.sg/collections/1389/datasets/d_a57a245b3cf3ec76ad36d55393a16e97/view | 3 April 2024  | singapore_market_foodcentre.geojson                                                           |
+| Supermarkets                     | Food & Essentials         | Singapore Food Agency     | https://beta.data.gov.sg/collections/1451/datasets/d_cac2c32f01960a3ad7202a99c27268a0/view         | 3 April 2024  | singapore_supermarkets.geojson                                                            | 
+| Health Facilities                | Healthcare                | OpenStreetMap              | https://data.humdata.org/dataset/hotosm_sgp_health_facilities | 3 April 2024  | singapore_healthcare.geojson                                                           |
+| Primary and Secondary Schools    | Education                 | Ministry of Education      | https://beta.data.gov.sg/collections/457/datasets/d_9aba12b5527843afb0b2e8e4ed6ac6bd/view | 3 April 2024  | singapore_schools.csv                                                           | 
+| Parks and Nature Reserves        | Parks                     | National Parks Board      | https://beta.data.gov.sg/collections/1489/datasets/d_77d7ec97be83d44f61b85454f844382f/view | 3 April 2024  | singapore_parks_reserves.geojson                                                           | 
 
-
+These datasets have been chosen based on the anecdotes provided in interview excerpts in Teo You Yenn’s book, This is What Inequality Looks Like, reflecting the often frequented locations by low-income families in Singapore. 
 
 ## Tools, methodology, and limitations
 
@@ -45,11 +45,11 @@ This project is inspired by geospatial digital commons (Elwood 2008, 175), which
 
 The app is built on [Mapbox](https://www.mapbox.com/), a versatile mapping tool that is built with OpenStreetMap data, and can be heavily customised for various purposes. The datasets used were uploaded to Mapbox’s dataset studio and exported into tilesets to be made into an interactive map.
 
-While Mapbox does provide their own Isochrone API, it does not provide specific calculations for public transport. Instead, I have used [GeoAPIfy’s](https://www.geoapify.com/) Isolines to draw up the necessary parameters for this project which included a public transport option, and is free for use. 
+While Mapbox does provide their own Isochrone API, it does not provide specific calculations for public transport. Instead, I have used [Geoapify’s](https://www.geoapify.com/) Isolines to draw up the necessary parameters for this project which included a public transport option, and is free for use. 
 
 Several of the datasets used are manually scraped from the source cites (i.e. government webpages) as addresses, before they are geocoded and given spatial attributes in longitudinal and latitudinal values using Google’s Geocoding API using Python. This occasionally turned out some errors and were placed outside of Singapore, which were corrected manually. 
 
-This project was heavily dependent on the algorithms and technical processes afforded by tools such as Google, Mapbox, and GeoAPIfy. Naturally, this also means that the data represented on this tool carries with it biases and potentially imperfect information. For example, it is unclear how GeoAPIfy makes its calculations on time-distances. Some datasets were also sourced from volunteered geographic information such as Humanitarian OpenStreetMap, which can be “patchwork” in nature and potentially perpetuate further inequalities (Elwood 2008, 178). 
+This project was heavily dependent on the algorithms and technical processes afforded by tools such as Google, Mapbox, and Geoapify. Naturally, this also means that the data represented on this tool carries with it biases and potentially imperfect information. For example, it is unclear how Geoapify makes its calculations on time-distances. Some datasets were also sourced from volunteered geographic information such as Humanitarian OpenStreetMap, which can be “patchwork” in nature and potentially perpetuate further inequalities (Elwood 2008, 178). 
 
 ## References and sources
 
